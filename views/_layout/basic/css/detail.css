@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* 폼 테이블 */
+.detail_form {
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.detail_form table tbody tr td {
+    padding: 0.5rem;
+}
+.detail_form table tbody tr td:first-child {
+    text-align: left;
+    font-weight: 500;
+}
+.detail_form table tbody tr td:first-child span.important {
+    color: #ff6b61;
+    position: relative;
+    top: 0.3rem;
+}
+
+/* 휴대전화 패널 */
+.detail_form table tbody tr td.phone_panel select,
+.detail_form table tbody tr td.biz_registration input,
+.detail_form table tbody tr td.phone_panel input {
+    width: 8%;
+}
+
+.addr_line {
+    margin-bottom: 1rem;
+}
+
+

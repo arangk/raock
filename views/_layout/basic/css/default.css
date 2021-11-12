@@ -1,0 +1,302 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* 폰트 */
+@import "../../../../assets/css/font.css";
+html {
+    /*overflow-y: scroll;*/
+    scroll-behavior: smooth;
+    ms-overflow-style: none;
+    scrollbar-width: none;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+input,
+select {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+}
+body {
+    font-family: "Noto sans KR", sans-serif;
+    color: #333333;
+    cursor: default;
+    font-weight: 400;
+    font-size: 1.3rem;
+    letter-spacing: -0.07rem;
+    background-color: #ffffff;
+}
+
+/* animate */
+.animate-2 {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.animate-3 {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.animate-4 {
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.animate-5 {
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+
+/* 본문 */
+.wrapper .header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    padding: 2rem 5rem;
+    background: #ffffff;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+	box-shadow: 0 0 20px 3px #efefef;
+	top: 0;
+}
+.wrapper .header .header-left {
+    float: left;
+}
+.wrapper .header .header-left .home {
+	position: absolute;
+	top: 2.3rem;
+	left: 4rem;
+	color: inherit;
+	font-size: 0.9rem;
+	font-family: '나눔명조';
+	font-weight: 900;
+}
+.wrapper .header .header-left .home:hover {
+	text-decoration: none;
+}
+.wrapper .header .header-left .home:before {
+	content: '';
+	background: url("../../../../assets/images/basic/logo.png") no-repeat center;
+	width: 3rem;
+	height: 3rem;
+	background-size: cover;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	top: -0.5rem;
+	margin-right: 0.5rem;
+}
+.wrapper .header .header-left .home span {
+	font-size: 2rem;
+}
+.wrapper .header .header-right {
+    float: right;
+}
+.wrapper .header .header-right ul {
+	margin: 0;
+}
+.wrapper .header .header-right ul li {
+    display: inline-block;
+    margin-left: 1.5rem;
+	padding: 0.5rem 0;
+}
+.wrapper .header .header-right ul li.active {
+	color: #f9be42;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+.wrapper .header .header-right ul li a {
+	color: inherit;
+	text-decoration: none;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+/* 페이징 */
+.paging {
+    margin: 2rem 0;
+    text-align: center;
+}
+.paging li {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.paging li a {
+    color: #2c2b2b;
+    line-height: 3rem;
+}
+.paging li a:hover {
+    text-decoration: none;
+}
+
+/* 버튼 */
+.btn_default {
+    display: inline-block;
+    background: transparent;
+    color: #2c2b2b;
+    border: 1px solid #9c9c9c;
+    padding: 0.71rem 2.1rem;
+    cursor: pointer;
+    text-align: center;
+}
+.btn_default:hover {
+    text-decoration: none;
+    color: #2c2b2b;
+}
+.btn_circle {
+    border-radius: 1.75rem;
+}
+.btn_small_circle {
+    border-radius: 0.5rem;
+}
+.btn_dark {
+    background: #414141;
+    color: #ffffff;
+    border: 1px solid #414141;
+}
+.btn_gray {
+    background: #4f4f4f;
+    color: #ffffff;
+    border: 1px solid #4f4f4f;
+}
+.btn_gray_outline {
+    border: 1px solid #dbdbdb;
+}
+.btn_red {
+    background: #ff6a61;
+    color: #ffffff;
+    border: 1px solid #ff6a61;
+}
+.btn_dark:hover,
+.btn_gray:hover,
+.btn_red:hover {
+    color: #ffffff;
+}
+.btn_line_red {
+    border: 1px solid #ff6a61;
+    color: #ff6a61;
+}
+.btn_line_red:hover {
+    color: #ff6a61;
+}
+.btn_medium {
+    width: 15rem;
+}
+.btn_long {
+    width: 25rem;
+}
+.btn_left {
+    float: left !important;
+}
+.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+/* 버튼패널 */
+.btn_panel {
+    padding: 3rem 0 1rem;
+    text-align: right;
+}
+.btn_panel .btn_default {
+    margin-left: 0.5rem;
+}
+
+/* 스위치 */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 7rem;
+    height: 2.3rem;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #b9b9b9;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 2rem;
+}
+.switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.5rem;
+    width: 1.5rem;
+    left: 0.5rem;
+    bottom: 0.4rem;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 2rem;
+}
+
+.switch input:checked + .slider {
+    background-color: #ff6a61;
+    border-radius: 2rem;
+}
+
+.switch input:focus + .slider {
+    box-shadow: 0 0 1px #ff6a61;
+}
+
+.switch input:checked + .slider:before {
+    -webkit-transform: translateX(4.5rem);
+    -ms-transform: translateX(4.5rem);
+    transform: translateX(4.5rem);
+}
+
+/* 폼 */
+.form_default {
+    background: #f7f7f7;
+    border: 1px solid #dbdbdb;
+    color: inherit;
+    display: inline-block;
+    font-weight: lighter;
+    width: 25rem;
+    height:3.5rem;
+    padding: 0.6rem 1.2rem;
+}
+.form_default.f_input {
+    margin-left: 0;
+}
+.form_white {
+    background: #ffffff;
+    border: 1px solid #d2d2d2;
+}
+.form_round {
+    border-radius: 15rem;
+}
+.form_transparent {
+    background: #ffffff;
+    border: transparent;
+}
+.btn_default:focus,
+.form_default:focus {
+    outline: none;
+    /*box-shadow: 0 0 0.3rem 0.1rem #ff6a61;*/
+    box-shadow: unset;
+}

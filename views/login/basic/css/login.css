@@ -1,0 +1,282 @@
+@charset "UTF-8";
+/* CSS Document */
+input {
+	-ms-ime-mode: active;
+	ime-mode:active;
+}
+
+.wrapper {
+	position: fixed;
+	height: 100%;
+	text-align: center;
+	background: #ffffff;
+}
+.wrapper .login {
+	position: relative;
+	width: 37rem;
+	height: 430px;
+	top: 50%;
+	background: #ffffff;
+	padding: 4rem 3rem;
+	border: 1px solid #3db6a1;
+	margin: -215px auto 0;
+	z-index: 1;
+}
+.wrapper .login form {
+	border-bottom: 1px solid #d5d5d5;
+}
+.wrapper .login .header img {
+	width: 19rem;
+}
+.wrapper .login .header p {
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin: 0.5rem 0 2rem 0;
+}
+.wrapper .login label {
+	width: 100%;
+}
+.wrapper .login input:not(.btn_default) {
+	width: 100%;
+	margin-bottom: 0.5rem;
+	padding: 1.3rem 2rem;
+}
+.wrapper .login .btn_default {
+	margin: 0.5rem 0 2rem;
+}
+.wrapper .login input[type=submit] {
+	width: 100%;
+	font-size: 1.5rem;
+	padding: 1.2rem;
+	margin-bottom: 2rem;
+}
+.wrapper .login .btn_panel a {
+	color: #4e4e4e;
+}
+.wrapper .login_bg {
+	background: linear-gradient(90deg, #4ebbca, #50bdac);
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	bottom: 0;
+}
+
+/** 검색창 */
+.wrapper .search_content,
+.wrapper .forgat {
+	position: absolute;
+	width: 100%;
+	height: 0;
+	opacity: 0;
+	top: 0;
+	background: #00000066;
+	z-index: 3;
+}
+.wrapper .search_content_wrapper {
+	position: relative;
+	width: 37rem;
+	height: 0;
+	top: 50%;
+	background: #ffffff;
+	padding: 2rem 3rem;
+	border: 1px solid #3db6a1;
+	margin: -285px auto 0;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.wrapper .search_content .search_content_wrapper .form_default,
+.wrapper .search_content .search_content_wrapper .btn_default {
+	vertical-align: middle;
+}
+.wrapper .search_content .search_content_wrapper .form_default {
+	width: 23rem;
+	margin-right: 0.3rem;
+}
+.wrapper .search_content .search_content_wrapper .btn_default {
+	width: 7rem;
+	padding: 0.58rem;
+}
+.wrapper .search_content .search_content_wrapper .search_result {
+	overflow-y: scroll;
+	height: 84%;
+	margin-top: 2rem;
+}
+.wrapper .search_content .search_content_wrapper .search_result::-webkit-scrollbar {
+	height: 0;
+	width: 0;
+}
+.wrapper .search_content .search_content_wrapper .search_result span.notice,
+.wrapper .search_content .search_content_wrapper .search_result span.no_result {
+	display: none;
+}
+.wrapper .search_content .search_content_wrapper .search_result ul {
+	display: none;
+	margin: 0 auto;
+	color: #1c1c1c;
+}
+.wrapper .search_content .search_content_wrapper .search_result ul li {
+	border-radius: 3px;
+	text-align: left;
+	position: relative;
+	padding: 1rem 0.3rem;
+	border-bottom: 1px solid #c7c7c7;
+}
+.wrapper .search_content .search_content_wrapper .search_result ul li .item_header,
+.wrapper .search_content .search_content_wrapper .search_result ul li .item_wrapper,
+.wrapper .search_content .search_content_wrapper .search_result ul li a {
+	display: inline-block;
+	vertical-align: middle;
+}
+.wrapper .search_content .search_content_wrapper .search_result ul li .item_header {
+	background-color: #ffffff;
+	border-radius: 3px 0 0 3px;
+	position: relative;
+	padding: 0 1rem;
+}
+.wrapper .search_content .search_content_wrapper .search_result ul li .item_header img {
+	width: 3rem;
+}
+.wrapper .search_content .search_content_wrapper .search_result ul li .item_wrapper {
+	width: 65%;
+	padding: 0 1rem;
+}
+.wrapper .search_content .search_content_wrapper .search_result ul li .item_wrapper p {
+	margin: 0;
+	font-size: 1.2rem;
+}
+.wrapper .search_content .search_content_wrapper .search_result ul li .item_wrapper p:first-child {
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+.wrapper .search_content .search_content_wrapper .search_result ul li a.btn_choose {
+	width: 5rem;
+	font-size: 1.2rem;
+	padding: 0.5rem;
+}
+
+.wrapper .forgat .search_content_wrapper p.header{
+	font-size: 2rem;
+	font-weight: 500;
+	color: #1c1c1c;
+	text-align: start;
+	margin: 0;
+}
+.wrapper .forgat .search_content_wrapper p{
+	text-align: start;
+	color: #858585;
+	margin-top:0.5rem;
+	font-weight: normal;
+}
+.wrapper .forgat .search_content_wrapper .forgat_input_div {
+	text-align: left;
+	margin-top: 5rem;
+}
+.wrapper .forgat .search_content_wrapper .forgat_input_div div {
+	position: relative;
+}
+.wrapper .forgat .search_content_wrapper .forgat_input_div label,
+.wrapper .forgat .search_content_wrapper .change_pw_div label {
+	display: block;
+	width: 100%;
+	padding: 1rem;
+	font-weight: normal;
+	border-bottom: 1px solid #cbcbcb;
+}
+.wrapper .forgat .search_content_wrapper .forgat_input_div label span,
+.wrapper .forgat .search_content_wrapper .change_pw_div label span {
+	display: inline-block;
+	width: 7rem;
+	color: #858585;
+}
+.wrapper .forgat .search_content_wrapper .change_pw_div label span {
+	width: 8rem;
+}
+.wrapper .forgat .search_content_wrapper .forgat_input_div div button {
+	position: absolute;
+	bottom: 1rem;
+	right: 0;
+}
+.wrapper .forgat .search_content_wrapper input{
+	border: 0;
+	outline: 0;
+	font-weight: 500;
+}
+.forgat_btn{
+	width: 70px;
+	border-radius: 12.5px;
+	border: solid 1px #858585;
+	background-color: #ffffff;
+}
+#get_id_btn,
+#change_pw_btn{
+	margin-top: 1rem;
+	width: 100%;
+}
+.wrapper .forgat .search_content_wrapper .result_div,
+.wrapper .forgat .search_content_wrapper .change_pw_div {
+	margin-top:2rem;
+	border-radius: 5px;
+	border: solid 0.5px #c1c1c1;
+	background-color: #ffffff;
+	padding: 2rem 2rem 5rem;
+	text-align: left;
+	display: none;
+}
+.wrapper .forgat .search_content_wrapper .result_div p.header,
+.wrapper .forgat .search_content_wrapper .change_pw_div p.header {
+	font-size: 1.4rem;
+	font-weight: normal;
+	color: #1c1c1c;
+}
+.wrapper .forgat .search_content_wrapper .result_div p.header span {
+	font-size: 2rem;
+	font-weight: 500;
+	color : #50bdaa;
+	display: block;
+}
+.wrapper .forgat .search_content_wrapper .result_div p,
+.wrapper .forgat .search_content_wrapper .change_pw_div p {
+	color: #858585;
+}
+.wrapper .forgat .search_content_wrapper .result_div ul {
+	margin: 2rem 0 3rem;
+}
+.wrapper .forgat .search_content_wrapper .result_div ul li {
+	position: relative;
+	padding: 0.7rem 1rem;
+}
+.wrapper .forgat .search_content_wrapper .result_div ul li:before {
+	content: '';
+	display: inline-block;
+	width: 0.5rem;
+	height: 0.5rem;
+	border: 1px solid #000000;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+	position: relative;
+	top: -0.3rem;
+}
+.wrapper .forgat .search_content_wrapper .result_div ul li:not(:last-child) {
+	border-bottom: 1px solid #dbdbdb;
+}
+.wrapper .forgat .search_content_wrapper .result_div ul li span {
+	display: inline-block;
+}
+.wrapper .forgat .search_content_wrapper .result_div ul li span:nth-child(1) {
+	font-weight: 500;
+}
+.wrapper .forgat .search_content_wrapper .result_div ul li span:nth-child(2) {
+	margin-left: 1rem;
+}
+.wrapper .forgat .search_content_wrapper .result_div .btn_find_pw,
+.wrapper .forgat .search_content_wrapper .change_pw_div .forgat_btn {
+	float: right;
+}
+.wrapper .forgat .search_content_wrapper .change_pw_div div {
+	margin: 2rem 0 3rem;
+}
+.wrapper .forgat .search_content_wrapper .change_pw_div label input {
+	display: inline-block;
+	width: 16rem;
+}

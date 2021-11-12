@@ -1,0 +1,492 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+#content {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	/*overflow: hidden;*/
+	overflow-y: scroll;
+	overflow-x: hidden;
+	text-align: center;
+	font-family: "Noto sans KR", sans-serif;
+	font-size: 1.7rem;
+	font-weight: lighter;
+	min-width: 353px;
+}
+#content .li {
+	position: relative;
+	height: 100%;
+}
+
+/* 일러스트 */
+#content #main1 {
+	min-height: 600px;
+	font-family: 'Yeon Sung', cursive;
+	padding: 2rem 3rem 0;
+	background-image: url("../../../../assets/images/basic/header.png");
+	background-position: 47% 1rem;
+	background-size: 25rem;
+	background-repeat: no-repeat;
+	animation-duration: 1s;
+	animation-name: slideup_main;
+}
+#content #main1 .invitation {
+	font-size: 1.5rem;
+	letter-spacing: 0.2rem;
+}
+#content #main1 .title {
+	position: relative;
+	top: 9rem;
+	margin-bottom: 0rem;
+	font-size: 2.7rem;
+	animation-duration: 1s;
+	animation-name: slideup;
+}
+#content #main1 .sub_title {
+	position: relative;
+	font-size: 2.7rem;
+	opacity: 0;
+	animation-duration: 1s;
+	animation-delay: 0.5s;
+	animation-name: slideup;
+	animation-fill-mode: forwards;
+}
+#content #main1 .date_title {
+	position: relative;
+	font-size: 1.9rem;
+	opacity: 0;
+	animation-duration: 1s;
+	animation-delay: 1s;
+	animation-name: slideup;
+	animation-fill-mode: forwards;
+}
+#content #main1 img {
+	width: 55%;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -27.5%;
+}
+#content #main1 label.left {
+	position: absolute;
+	left: 10%;
+	bottom: 10%;
+}
+#content #main1 label.right {
+	position: absolute;
+	right: 10%;
+	bottom: 10%;
+}
+/* 메인 공통 */
+#content .li:not(#main1) {
+	padding: 2rem;
+}
+#content .li:not(#main1) .title {
+	font-size: 2.3rem;
+	font-weight: 400;
+	margin-bottom: 1.5rem;
+}
+#content .li:not(#main1) .title span {
+	display: block;
+}
+#content .li:not(#main1) .title span:first-child {
+	color: #5a5a5a;
+	font-size: 1rem;
+	font-weight: 600;
+	font-style: italic;
+	letter-spacing: 0.25rem;
+	margin: 0 auto;
+}
+#content .li:not(#main1) .title span:first-child:after {
+	content: '';
+	display: block;
+	width: 3rem;
+	height: 1px;
+	border-bottom: 1px solid #5a5a5a;
+	margin: 1rem auto 0.3rem;
+}
+
+/* 메인2 */
+#content #main2,
+#content #main4 {
+	background: url("../../../../assets/images/basic/bg.png");
+	background-size: cover;
+}
+#content #main2 .intro,
+#content #main2 .gratefulness,
+#content #main4 .location {
+	background: #fffef6;
+	padding: 2rem;
+}
+#content #main2 .gratefulness {
+	margin-top: 1rem;
+}
+#content #main2 .intro div {
+	padding: 2rem 0;
+}
+#content #main2 .intro div:nth-child(2) {
+	border-bottom: 1px solid #dcdcdc;
+	font-size: 1.5rem;
+}
+#content #main2 .intro div:nth-child(2) p {
+	margin-bottom: 0.5rem;
+}
+#content #main2 .intro div:last-child {
+	padding-bottom: 1rem;
+}
+#content #main2 .intro div:last-child p:last-child {
+	margin: 0;
+}
+#content #main2 .intro div p span {
+	font-size: 1.6rem;
+	font-weight: 300;
+}
+#content #main2 .intro div p span:not(:last-child) {
+	margin-right: 0.5rem;
+}
+#content #main2 .intro div p span:last-child a {
+	color: inherit;
+}
+#content #main2 .intro div p span:last-child a:hover {
+	color: #fee480;
+}
+#content #main2 .gratefulness div {
+	padding: 1rem 0;
+}
+#content #main2 .gratefulness div p {
+	margin-bottom: 0.7rem;
+}
+#content #main2 .gratefulness div p span:first-child {
+	font-weight: 400;
+}
+#content #main2 .gratefulness div p span:nth-child(2) {
+	margin-right: 1rem;
+}
+#content #main2 .gratefulness div p span {
+	font-weight: 300;
+}
+
+/* 갤러리 */
+#content #main3 {
+	padding: 2rem 0 5rem !important;
+}
+#content #main3 .slider,
+#content #main3 .splide {
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+}
+#content #main3 .slider ul {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+#content #main3 .slider ul li {
+	text-align: center;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+#content #main3 .slider ul li img {
+	width: 100%;
+	margin: 0 auto;
+}
+#content #main3 .slider .image_list {
+	height: 39rem;
+}
+#content #main3 .slider .image_list li {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+#content #main3 .slider .image_list li img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+#content #main3 .slider .image_list li.active {
+	opacity: 1;
+}
+#content #main3 .slider .image_list li img.height {
+	width: auto !important;
+	height: 100%;
+}
+#content #main3 .slider .thumbnail_list {
+	display: table;
+}
+#content #main3 .slider .thumbnail_list li {
+	display: table-cell;
+	cursor: pointer;
+	width: 10rem;
+	height: 8rem;
+	vertical-align: middle;
+	opacity: 0.5;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+#content #main3 .slider .thumbnail_list li img {
+	display: none;
+}
+#content #main3 .slider .thumbnail_list li.active {
+	opacity: 1;
+}
+#content #main3 .slider .navigator {
+	position: absolute;
+	width: 100%;
+	top: 35%;
+	opacity: 0;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+#content #main3 .slider:hover .navigator {
+	opacity: 1;
+}
+#content #main3 .slider:hover .navigator a {
+	cursor: pointer;
+}
+#content #main3 .slider .navigator .left {
+	position: absolute;
+	left: 0;
+}
+#content #main3 .slider .navigator .right {
+	position: absolute;
+	right: 0;
+}
+/* 코멘트 */
+#content #sub .comment {
+	background: #fffef6;
+	padding: 2rem 0;
+}
+#content #sub .comment ul.list {
+	margin: 2rem;
+}
+#content #sub .comment ul.list li {
+	border-bottom: 1px solid #e2e2e2;
+	padding: 1.5rem 1rem;
+}
+#content #sub .comment ul.list li p {
+	text-align: left;
+	font-size: 1.5rem;
+	margin: 0;
+}
+#content #sub .comment ul.list li p:first-child {
+	font-weight: 400;
+	color: #efd475;
+	margin-bottom: 0.3rem;
+	font-size: 1.4rem;
+}
+#content #sub .comment ul.pagination {
+	margin: 0 2rem;
+	font-size: 1.3rem;
+}
+#content #sub .comment ul.pagination li {
+	display: inline-block;
+}
+#content #sub .comment ul.pagination li a {
+	display: block;
+	border: 1px solid #e2e2e2;
+	border-radius: 100%;
+	background: transparent;
+	cursor: pointer;
+	color: inherit;
+}
+#content #sub .comment form {
+	padding-top: 2rem;
+}
+#content #sub .comment form label {
+	display: inline-block;
+	font-weight: lighter;
+	width: 70%;
+	margin-right: -0.4rem;
+	border: 1px solid #a9a9a9;
+	background: #ffffff;
+}
+#content #sub .comment form label input {
+	display: inline-block;
+	padding: 0.3rem 0.5rem;
+	font-size: 1.5rem;
+	background: transparent;
+	outline: none;
+	border : transparent;
+}
+#content #sub .comment form label input[name=name] {
+	width: 21%;
+	border-right: 1px solid #a9a9a9;
+}
+#content #sub .comment form label input[name=comment] {
+	width: 75%;
+}
+#content #sub .comment form input[type=submit] {
+	background: #ffffff;
+	border: 1px solid #a9a9a9;
+	padding: 0.7rem 2rem;
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+/* 지도 */
+#content #main4 .location #map {
+	width: 100%;
+	height: 25rem;
+	margin-bottom: 2rem;
+}
+#content #main4 .location .map_info p {
+	margin-bottom: 0.5rem;
+}
+#content #main4 .location .map_info p:first-child {
+	font-size: 1.9rem;
+	font-weight: 500;
+}
+#content #main4 .location .map_info p {
+	font-size: 1.5rem;
+	font-weight: 300;
+	letter-spacing: -0.2rem;
+}
+#content #main4 .location .map_action {
+	margin: 7rem 0 1rem;
+}
+#content #main4 .location .map_action:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+#content #main4 .location .map_action li {
+	display: inline-block;
+}
+#content #main4 .location .map_action li:not(:last-child) {
+	float: left;
+	margin-right: 1.5rem;
+}
+#content #main4 .location .map_action li:last-child {
+	float: right;
+}
+#content #main4 .location .map_action li a {
+	color: inherit;
+	cursor: pointer;
+	font-size: 1.35rem;
+	font-weight: 300;
+}
+#content #main4 .location .map_action li a:hover {
+	text-decoration: none;
+}
+#content #main4 .location .map_action li a:before {
+	content: '';
+	position: relative;
+	display: block;
+	width: 2.7rem;
+	height: 2.7rem;
+	left: -0.1rem;
+	border-radius: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0 auto;
+}
+#content #main4 .location .map_action li a#navi:before {
+	background-image: url("../../../../assets/images/basic/kakaonavi.png");
+}
+#content #main4 .location .map_action li a#naver:before {
+	background-image: url("../../../../assets/images/basic/naver.png");
+}
+#content #main4 .location .map_action li a#public:before {
+	background-image: url("../../../../assets/images/basic/public.png");
+}
+#content #main4 .location .map_action li a#share:before {
+	background-image: url("../../../../assets/images/basic/share.png");
+}
+
+/* 달력 */
+#content #main5 {
+	font-family: 'Yeon Sung', cursive;
+}
+#content #main5 .calendar {
+	position: relative;
+	text-align: center;
+	margin-top: 5rem;
+}
+#content #main5 .calendar p {
+	margin-bottom: 2rem;
+	font-size: 3.1rem;
+	font-weight: bold;
+}
+#content #main5 .calendar table {
+	margin:  0 auto;
+}
+#content #main5 .calendar table tr td {
+	position: relative;
+	padding: 1rem 1.5rem;
+}
+#content #main5 .calendar table tr td img {
+	position: absolute;
+	width: 5rem;
+	top: 50%;
+	left: 50%;
+	margin-top: -2.5rem;
+	margin-left: -2.5rem;
+	z-index: 0;
+	animation-duration: 1.2s;
+	animation-name: click_date;
+	animation-iteration-count: infinite;
+}
+#content #main5 .calendar table tr td span {
+	position: relative;
+	z-index: 1;
+}
+#content #main5 .calendar table tr td span.w_date {
+	position: absolute;
+	font-size: 1rem;
+	color: #ff3d3d;
+	width: 10rem;
+	top: -0.3rem;
+	left: 50%;
+	margin-left: -5rem;
+}
+
+/* 애니메이션 */
+@keyframes slideup_main {
+	from {
+		top: 2rem;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+@keyframes slideup {
+	from {
+		top: 11rem;
+		opacity: 0;
+	}
+	to {
+		top: 9rem;
+		opacity: 1;
+	}
+}
+@keyframes click_date {
+	from {
+		width: 7rem;
+		margin-top: -3.5rem;
+		margin-left: -3.5rem;
+	}
+	to {
+		width: 5rem;
+		margin-top: -2.5rem;
+		margin-left: -2.5rem;
+	}
+}
+
+@media (max-width: 360px) {
+	#content #sub .comment form label input[name=comment] {
+		width: 65%;
+	}
+}
