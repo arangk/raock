@@ -31,7 +31,7 @@
 							<p>네이버에서 구매 후 제작하기를 진행해주세요 :)</p>
 							<div class="btn_panel">
 								<a>구매하기</a>
-								<a href="<?=base_url('makeself/register/'.element('key', $view).'/'.element('id', $list))?>">제작하기</a>
+								<a href="<?=base_url('MakeSelf/register/'.element('key', $view).'/'.element('id', $list))?>">제작하기</a>
 							</div>
 						</div>
 					</div>

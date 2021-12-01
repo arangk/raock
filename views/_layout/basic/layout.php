@@ -47,7 +47,7 @@
 		<div class="header-right">
 			<ul>
 				<li id="mobile"><a href="/">모바일 청첩장</a></li>
-				<li id="illust"><a href="<?=base_url('makeself/illust')?>">일러스트 청첩장</a></li>
+				<li id="illust"><a href="<?=base_url('MakeSelf/illust')?>">일러스트 청첩장</a></li>
 			</ul>
 		</div>
 	</div>

@@ -49,13 +49,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'makeself';
+$route['default_controller'] = 'MakeSelf';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['main/(:any)'] = 'main/index/$1';
 
-$route['makeself/register'] = 'makeself/register/$1/$2';
-$route['makeself/register/(:any)/(:number)'] = 'makeself/register/$1/$2';
+$route['MakeSelf/register'] = 'MakeSelf/register/$1/$2';
+$route['MakeSelf/register/(:any)/(:number)'] = 'MakeSelf/register/$1/$2';
 
-$route['makeself/(:any)'] = 'makeself/index/$1';
+$route['MakeSelf/(:any)'] = 'MakeSelf/index/$1';
+
